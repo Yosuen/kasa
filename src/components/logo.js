@@ -1,12 +1,12 @@
 import React from 'react';
-import {ReactComponent as LogoKasa} from '.\assets\LOGO.svg';
+import {ReactComponent as LogoKasa} from '../assets/LOGO.svg';
 
-const logo = () => {
+const Logo = () => {
     return (
-        <div className='logo'>
+        <div className='Logo'>
             <LogoKasa />
         </div>
     );
 };
 
-export default logo;
+export default Logo;
