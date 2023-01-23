@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter, UseParams, Routes, Route } from "react-router-dom"
-import About from './pages/about';
+import { BrowserRouter, useParams, Routes, Route } from "react-router-dom"
+import About from './pages/About';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-// import  "./styles/"
+import  "./styles/index.scss"
 
-// function GetId() {
-//   let { id } = UseParams();
-// }
+function GetId() {
+  let { id } = useParams();
+}
 
 const App = () => {
   return (
