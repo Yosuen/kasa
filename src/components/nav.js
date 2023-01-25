@@ -4,14 +4,17 @@ import { NavLink } from 'react-router-dom';
 const Nav = () => {
     return (
         <div className='navbar'>
-            <ul>
-                <NavLink to="/">
-                    <li className='navbtn__1 navbtn'>Accueil</li>
-                </NavLink>
-                <NavLink to="/about">
-                    <li className='navbtn__2 navbtn'>À Propos </li>
-                </NavLink>
-            </ul>
+            <NavLink to="/" className='navbtn' style={({ isActive }) => ({
+                textDecoration: isActive ? 'underline' : 'none'
+            })}>
+                Accueil
+            </NavLink>
+            <NavLink to="/about" className='navbtn' style={({ isActive }) => ({
+                textDecoration: isActive ? 'underline' : 'none'
+            })}>
+                A propos
+            </NavLink>
+
 
         </div>
     );

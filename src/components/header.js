@@ -1,12 +1,11 @@
 import React from 'react';
-import Logo from './logo';
+import LogoR from './logoR';
 import Nav from './nav';
-
 
 const Header = () => {
     return (
         <div className='Header'>
-            <Logo/>
+            <LogoR/>
             <Nav/>
         </div>
     );

@@ -1,15 +1,22 @@
 .Header {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 .navbar {
     display: flex;
     flex-flow: row wrap;
+    width: max-content;
+    align-content: flex-end;
+}
+
+.navlinkbtn {
+    text-decoration: none;
 }
 
 .navbtn {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat medium';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -18,7 +25,8 @@
     text-align: right;
     justify-self: end;
     color: #FF6060;
-    padding: 3vw;
+    margin: 2vw;
+    text-decoration: none;
     &:active {
         text-decoration: underline;
     }

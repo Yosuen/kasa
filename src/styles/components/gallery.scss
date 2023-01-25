@@ -1,0 +1,44 @@
+.galleryContainer {
+    margin-top: 25px;
+}
+
+.galleryText {
+    font-family: 'Montserrat medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 68px;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+}
+
+.galleryMaskGroup {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.galleryImg {
+    filter: brightness(70%);
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.galleryText {
+    position: absolute;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+}
+
+.tilePlacement {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
