@@ -4,8 +4,10 @@ import LogoW from './logoW';
 const Footer = () => {
     return (
         <div className='footerContainer'>
+            <div className='footerWrapper'>
             <LogoW />
-            <span className='copyright'> © 2020 Kasa. All rights reserved </span>
+            <span className='footerCopyright'> © 2020 Kasa. All rights reserved </span>
+            </div>
         </div>
     );
 };

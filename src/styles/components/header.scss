@@ -31,3 +31,13 @@
         text-decoration: underline;
     }
 }
+
+@media (max-width: 768px) {
+    .navbtn {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .headerLogo {
+        scale: 0.75;
+    }
+}

@@ -42,3 +42,11 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
+
+@media (max-width: 768px) {
+    .galleryText {
+        font-size: 24px;
+        line-height: 100%;
+        padding: auto;
+    }
+}

@@ -1,12 +1,15 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Tile = () => {
+const Tile = ({logement}) => {
+    console.log(logement)
     return (
-        <div className='tileContainer'>
+        <NavLink to={'fiche-logement/' + logement.id} className='tileContainer'>
             <div className='tile'>
-                <span className='tileText'>Titre de la<br></br> location</span>
+                <img className='tileCover' src={logement.cover} alt="" />
+                <span className='tileText'>{logement.title}</span>
             </div>
-        </div>
+        </NavLink>
     );
 };
 

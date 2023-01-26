@@ -3,7 +3,7 @@ import {ReactComponent as LogoWhite} from '../assets/LOGOWhite.svg';
 
 const LogoW = () => {
     return (
-        <div className='Logo'>
+        <div className='footerLogo'>
             <LogoWhite />
         </div>
     );

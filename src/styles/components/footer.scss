@@ -1,15 +1,28 @@
-.copyright {
+.footerCopyright {
     color: #FFFFFF;
     font-family: 'Montserrat medium';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 142.6%;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     text-align: center;
 }
 
+.footerLogo {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footerWrapper {
+    padding: 15px;
+}
+
 .footerContainer {
+    margin-left: -4vw;
     width: 100%;
     height: auto;
     display: flex;

@@ -3,7 +3,7 @@ import {ReactComponent as LogoRed} from '../assets/LOGORed.svg';
 
 const LogoR = () => {
     return (
-        <div className='Logo'>
+        <div className='headerLogo'>
             <LogoRed />
         </div>
     );

@@ -1,20 +1,17 @@
 import React from 'react';
 import Tile from './tile';
+import logements from "../assets/logements.json";
 
 const Gallery = () => {
     return (
         <div className='galleryContainer'>
-            <div className='galleryMaskGroup'>
-                <img className='galleryImg' src={require('../assets/gallery1.png')} alt='gallery' />
-                <p className='galleryText'>Chez vous, partout et ailleurs</p>
-            </div>
             <div className='tilePlacement'>
-                <Tile />
-                <Tile />
-                <Tile />
-                <Tile />
-                <Tile />
-                <Tile />
+                {logements.map((logement) => {
+                    return (
+                        <Tile key={logement.id} logement={logement} />
+                    )
+                })}
+                
             </div>
         </div>
     );
