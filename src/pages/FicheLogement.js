@@ -6,13 +6,15 @@ import Header from '../components/header';
 import logements from "../assets/logements.json"
 
 const FicheLogement = () => {
-    const {id} = useParams();
+    const { id } = useParams();
     let logement = logements.find((element) => element.id == id)
     console.log(logement)
     return (
-        <div>
-            <Header />
-            {/* <Caroussel /> */}
+        <div className='wrapperAll'>
+            <div className='allButFooter'>
+                <Header />
+                {/* <Caroussel /> */}
+            </div>
             <Footer />
         </div>
     );
