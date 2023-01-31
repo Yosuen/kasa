@@ -5,14 +5,9 @@ import FicheLogement from './pages/FicheLogement';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import  "./styles/index.scss"
-import logements from "./assets/logements.json"
-
-
-
-
+import logements from "./assets/dataset/logements.json"
 
 const App = () => {
-  console.log(logements)
   return (
     <BrowserRouter>
       <Routes>

@@ -1,16 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Arrow from '../assets/arrow_back_ios-24px 1.svg';
+import Arrow from '../assets/logos/arrow_back_ios-24px 1.svg';
 import "../styles/components/dropdown.scss";
 
 const Dropdown = (props) => {
     const [wrapState, setWrapState] = useState(false);
-    const [height, setHeight] = useState();
 
     const toggleWrap = () => {
         setWrapState(!wrapState);
     };
-
-    const refHeight = useRef();
 
     return (
         <div className='dropdown'>

@@ -2,6 +2,7 @@ import React from 'react';
 import Dropdown from '../components/dropdown';
 import Footer from '../components/footer';
 import Header from '../components/header';
+import aboutData from '../assets/dataset/about.json';
 
 const About = () => {
     return (
@@ -9,12 +10,12 @@ const About = () => {
             <div className='allButFooter'>
                 <Header />
                 <div className='galleryMaskGroup'>
-                    <img className='galleryImg' src={require('../assets/aboutImage.png')} alt='gallery' />
+                    <img className='galleryImg' src={require('../assets/images/aboutImage.png')} alt='gallery' />
                 </div>
-                <Dropdown aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
-                <Dropdown aboutTitle="Respect" aboutText="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
-                <Dropdown aboutTitle="Service" aboutText="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." />
-                <Dropdown aboutTitle="Responsabilité" aboutText="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes." />
+                <Dropdown aboutTitle={aboutData[0].title} aboutText={aboutData[0].description} />
+                <Dropdown aboutTitle={aboutData[1].title} aboutText={aboutData[1].description} />
+                <Dropdown aboutTitle={aboutData[2].title} aboutText={aboutData[2].description} />
+                <Dropdown aboutTitle={aboutData[3].title} aboutText={aboutData[3].description} />
             </div>
             <Footer />
         </div>

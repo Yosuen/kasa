@@ -1,0 +1,65 @@
+.carousselWrapper {
+    width: 100%;
+    height: auto;
+}
+
+.ficheInfo {
+    &__wrapper {
+        width: 100%;
+        display: flex;
+    }
+    &__LContainer {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+    &__RContainer {
+        width: min-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__title {
+        font-family: "Montserrat medium";
+        color: #ff6060;
+        font-size: 36px;
+        margin: 10px 0;
+    }
+    &__underTitle { 
+        font-family: "Montserrat medium";
+        color: #ff6060;
+        font-size: 18px;
+        margin: 10px 0;
+        padding-bottom: 10px;
+    }
+}
+
+.hostPicture { 
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.hostContainer { 
+    display: flex;
+    flex-direction: row;
+}
+
+.hostName {
+    font-family: "Montserrat medium";
+    color: #ff6060;
+    display: flex;
+    width: min-content;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.hostImg {
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+    right: 50%;
+    scale: 0.5;
+    bottom: 50%;
+}

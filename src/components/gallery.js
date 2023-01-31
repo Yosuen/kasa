@@ -1,6 +1,6 @@
 import React from 'react';
 import Tile from './tile';
-import logements from "../assets/logements.json";
+import logements from "../assets/dataset/logements.json";
 
 const Gallery = () => {
     return (

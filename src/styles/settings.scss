@@ -26,3 +26,9 @@ html {
 .allButFooter {
     padding: 30px 4vw;
 }
+
+@font-face {
+    font-family: "Montserrat medium";
+    src: local("AirbnbCerealLight"),
+        url("../assets/Montserrat-Regular.ttf") format("truetype");
+}

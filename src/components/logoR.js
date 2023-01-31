@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as LogoRed} from '../assets/LOGORed.svg';
+import {ReactComponent as LogoRed} from '../assets/logos/LOGORed.svg';
 
 const LogoR = () => {
     return (

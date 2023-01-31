@@ -11,7 +11,7 @@ const Home = () => {
             <div className='allButFooter'>
                 <Header />
                 <div className='galleryMaskGroup'>
-                    <img className='galleryImg' src={require('../assets/gallery1.png')} alt='gallery' />
+                    <img className='galleryImg' src={require('../assets/images/gallery1.png')} alt='gallery' />
                     <p className='galleryText'>Chez vous, partout et ailleurs</p>
                 </div>
                 <Gallery />

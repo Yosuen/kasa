@@ -1,12 +1,10 @@
 @import "./settings.scss";
-
-@font-face {
-    font-family: "Montserrat medium";
-    src: local("AirbnbCerealLight"),
-        url("../assets/Montserrat-Regular.ttf") format("truetype");
-}
-
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./components/tile.scss";
-@import "./components/gallery.scss"
+@import "./components/ficheInfo.scss";
+@import "./components/dropdown.scss";
+@import "./components/notFound.scss";
+@import "./components/gallery.scss";
+@import "./components/imageSlider.scss";
+@import "./components/tag.scss";
