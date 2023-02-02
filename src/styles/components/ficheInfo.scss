@@ -7,6 +7,7 @@
     &__wrapper {
         width: 100%;
         display: flex;
+        justify-content: space-between;
     }
     &__LContainer {
         width: max-content;
@@ -31,6 +32,9 @@
         font-size: 18px;
         margin: 10px 0;
         padding-bottom: 10px;
+    }
+    &__rating {
+        display: flex;
     }
 }
 

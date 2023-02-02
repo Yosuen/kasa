@@ -4,21 +4,35 @@ import About from './pages/About';
 import FicheLogement from './pages/FicheLogement';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import  "./styles/index.scss"
-import logements from "./assets/dataset/logements.json"
+import "./styles/index.scss"
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/fiche-logement/:id' element={<FicheLogement />} />
-        <Route path="*" element={<NotFound/>} /> 
-        {/* path="*" permet d'aller en 404 si l'url ne correspond à rien au dessus */}
-      </Routes>
-    </BrowserRouter>
-  );
+  const [logements, setLogements] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch("http://localhost:3000/logements.json")
+        const jsonRes = await res.json();
+        const temp = await jsonRes;
+        setLogements(temp);
+        console.log(logements);
+      }
+    fetchData();
+  }, []);
+  if (logements.length !== 0) {
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home logements={logements} />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/fiche-logement/:id' element={<FicheLogement logements={logements} />} />
+          <Route path="*" element={<NotFound />} />
+          {/* path="*" permet d'aller en 404 si l'url ne correspond à rien au dessus */}
+        </Routes>
+      </BrowserRouter>
+    );
+  } else {
+    <p>waiting for fetch</p>
+  }
 };
 
 export default App;

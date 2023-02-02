@@ -1,6 +1,4 @@
 import React from 'react';
-import ImageSlider from './ImageSlider.js'
-import logements from "../assets/dataset/logements.json";
 import '../styles/index.scss';
 import Tag from './tag.js';
 import Host from './host.js';
@@ -23,6 +21,7 @@ const FicheInfo = (props) => {
                 <Host hostName={props.data.host.name} hostPic={props.data.host.picture}/>
                 <Rating rating={props.data.rating}/>
             </div>
+            
         </div>
     );
 };

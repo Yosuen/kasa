@@ -1,14 +1,14 @@
 import React from 'react';
 import Tile from './tile';
-import logements from "../assets/dataset/logements.json";
 
-const Gallery = () => {
+const Gallery = ({logements}) => {
+    console.log(logements)
     return (
         <div className='galleryContainer'>
             <div className='tilePlacement'>
                 {logements.map((logement) => {
                     return (
-                        <Tile key={logement.id} logement={logement} />
+                        <Tile logement={logement} />
                     )
                 })}
                 
