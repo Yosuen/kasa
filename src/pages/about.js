@@ -12,10 +12,10 @@ const About = () => {
                 <div className='galleryMaskGroup'>
                     <img className='galleryImg' src={require('../assets/images/aboutImage.png')} alt='gallery' />
                 </div>
-                <Dropdown aboutTitle={aboutData[0].title} aboutText={aboutData[0].description} />
-                <Dropdown aboutTitle={aboutData[1].title} aboutText={aboutData[1].description} />
-                <Dropdown aboutTitle={aboutData[2].title} aboutText={aboutData[2].description} />
-                <Dropdown aboutTitle={aboutData[3].title} aboutText={aboutData[3].description} />
+                <Dropdown title={aboutData[0].title} text={aboutData[0].description} />
+                <Dropdown title={aboutData[1].title} text={aboutData[1].description} />
+                <Dropdown title={aboutData[2].title} text={aboutData[2].description} />
+                <Dropdown title={aboutData[3].title} text={aboutData[3].description} />
             </div>
             <Footer />
         </div>

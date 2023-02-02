@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import Arrow from '../assets/logos/arrow_back_ios-24px 1.svg';
-import "../styles/components/dropdown.scss";
+import "../styles/index.scss";
 
 const Dropdown = (props) => {
     const [wrapState, setWrapState] = useState(false);
@@ -12,11 +12,11 @@ const Dropdown = (props) => {
     return (
         <div className='dropdown'>
             <div onClick={toggleWrap} className="dropdown__unwrapped">
-                <span className='dropdown__title'>{props.aboutTitle}</span>
+                <span className= {`dropdown__title ${props.smallText ? "smallText" : null}`}>{props.title}</span>
                 <img className= {`dropdown__arrow ${wrapState ? "dropdown__arrow--up" : "dropdown__arrow--down"}`} src={Arrow} alt="flèche wrap"/>
             </div>
-            { wrapState ? <div className='dropdown__content'>
-                <p>{props.aboutText}</p>
+            { wrapState ? <div className= {`dropdown__content ${props.smallText ? "smallText" : null}`}>
+                <div>{props.text}</div>
             </div> : <div></div> }
         </div>
     );

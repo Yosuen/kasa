@@ -6,10 +6,10 @@ import '../styles/index.scss';
 const Rating = (props) => {
     const rows = [];
     for (let i = 0; i < props.rating; i++) {
-        rows.push(<StarFull/>);
+        rows.push(<div className='star'><StarFull/></div>);
     }
     for (let i = 0; i < 5 - props.rating; i++) {
-        rows.push(<StarEmpty/>);
+        rows.push(<div className='star'><StarEmpty/></div>);
     }
     return <div className='ficheInfo__rating'>
         {rows}

@@ -35,7 +35,17 @@
     }
     &__rating {
         display: flex;
+        flex-flow: row nowrap;
+        padding-top: 10px;
     }
+    &__dropdown {
+        display: flex;
+        flex-flow: row;
+    }
+}
+
+.star { 
+    padding: 0 4px;
 }
 
 .hostPicture { 
@@ -53,6 +63,7 @@
 .hostName {
     font-family: "Montserrat medium";
     color: #ff6060;
+    font-size: 18px;
     display: flex;
     width: min-content;
     align-items: center;
