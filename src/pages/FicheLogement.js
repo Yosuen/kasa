@@ -7,19 +7,14 @@ import Header from '../components/header';
 import NotFound from './NotFound';
 
 const FicheLogement = ({ logements }) => {
-    <p>allo?</p>
     const { id } = useParams();
     const [logement, setLogement] = useState();
-    console.log(logements);
     useEffect(() => {
-        console.log('useEffect');
         setLogement(logements.find((element) => element.id === id));
-        console.log(logement);
     }, []);
     if (logement === undefined) {
         <NotFound />
     } else {
-        console.log(logement)
         const slides = logement.pictures;
         const data = logement;
         return (

@@ -7,7 +7,7 @@ import Dropdown from './dropdown';
 
 const FicheInfo = (props) => {
     const listEquipment = [];
-    props.data.equipments.forEach(e => listEquipment.push(<li>{e}</li>));
+    props.data.equipments.forEach(e => listEquipment.push(<li key={e}>{e}</li>));
 
     return (
         <div>
@@ -16,14 +16,14 @@ const FicheInfo = (props) => {
                     <p className='ficheInfo__title'>{props.data.title}</p>
                     <p className='ficheInfo__underTitle'>{props.data.location}</p>
                     <div className='ficheInfo__tags'>
-                        {props.data.tags.map((tag) => (
-                            <Tag tag={tag} />
+                        {props.data.tags.map((tag, i) => (
+                            <Tag key={i} tag={tag} />
                         ))}
                     </div>
                 </div>
                 <div className='ficheInfo__RContainer'>
                     <Host hostName={props.data.host.name} hostPic={props.data.host.picture} />
-                    <Rating rating={props.data.rating} />
+                    <Rating key={props.data.rating} rating={props.data.rating} />
                 </div>
             </div>
             <div className='ficheInfo__dropdown'>

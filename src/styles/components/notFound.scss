@@ -22,3 +22,17 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .text404 { 
+        font-size: 96px;
+        margin-top: 10vh;
+    }
+    .textNotFound { 
+        font-size: 18px;
+        text-align: center;
+    }
+    .redirectHome { 
+        font-size: 14px;
+    }
+}

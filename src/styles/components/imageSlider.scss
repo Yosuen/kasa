@@ -39,3 +39,10 @@
     object-position: center;
     border-radius: 25px;
 }
+
+@media (max-width: 768px) {
+    .wrapper__arrow {
+        scale: 0.4;
+        padding: 0;
+    }
+}

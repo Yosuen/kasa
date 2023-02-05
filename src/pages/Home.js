@@ -6,7 +6,6 @@ import "../styles/settings.scss";
 
 
 const Home = ({logements}) => {
-    console.log(logements)
     if (logements.length > 0) {
         return (
             <div>
