@@ -44,5 +44,11 @@
     .wrapper__arrow {
         scale: 0.4;
         padding: 0;
+        &--L {
+            translate: -7vw;
+        }
+        &--R {
+            translate: 7vw;
+        }
     }
 }

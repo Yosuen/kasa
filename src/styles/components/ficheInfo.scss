@@ -94,9 +94,7 @@
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-between;
-        }
-        &__rating {
-            scale: 0.8;
+            width: 100%;
         }
         &__dropdown {
             flex-flow: column;
@@ -114,4 +112,10 @@
     .hostName { 
         font-size: 12px;
     }
+
+    .star {
+        padding: 0 2px;
+        transform: scale(0.7);
+    }
+    
 }

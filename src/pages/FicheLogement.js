@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import FicheInfo from '../components/ficheInfo';
 import ImageSlider from '../components/ImageSlider';
 import Footer from '../components/footer';
 import Header from '../components/header';
-import NotFound from './NotFound';
 
 const FicheLogement = ({ logements }) => {
     const { id } = useParams();
     const [logement, setLogement] = useState();
+    const navigate = useNavigate();
     useEffect(() => {
         setLogement(logements.find((element) => element.id === id));
     }, []);
     if (logement === undefined) {
-        <NotFound />
+        navigate("/404", { state: { message: "Can't get data" } });
     } else {
         const slides = logement.pictures;
         const data = logement;

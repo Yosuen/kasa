@@ -31,9 +31,9 @@ const ImageSlider = (props) => {
             <img className='image' src={props.slides[currentImg]} />
             {nbImg > 1 ?
                 <div className='wrapper'>
-                    <ArrowBack className='wrapper__arrow' onClick={prevSlide} />
+                    <ArrowBack className='wrapper__arrow wrapper__arrow--L' onClick={prevSlide} />
                     <span className='wrapper__bulletPoint'>{currentImg + 1}/{nbImg}</span>
-                    <ArrowForward className='wrapper__arrow' onClick={nextSlide} />
+                    <ArrowForward className='wrapper__arrow wrapper__arrow--R' onClick={nextSlide} />
                 </div>
                 : <div></div>}
         </div>
