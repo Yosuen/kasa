@@ -28,7 +28,6 @@ const FicheLogement = ({ logements }) => {
             </div>
         );
     }
-
 };
 
 export default FicheLogement;

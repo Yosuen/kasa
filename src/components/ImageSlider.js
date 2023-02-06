@@ -3,6 +3,7 @@ import { ReactComponent as ArrowBack } from '../assets/logos/arrow_back_ios-24px
 import { ReactComponent as ArrowForward } from '../assets/logos/arrow_forward_ios-24px 1.svg';
 import '../styles/index.scss';
 
+{/* caroussel d'image sur le page fiche logement */}
 const ImageSlider = (props) => {
     const[currentImg, setCurrentImg] = useState(0);
     let nbImg = props.slides.length;
@@ -28,7 +29,7 @@ const ImageSlider = (props) => {
     };
     return (
         <div className='imageSliderContainer'>
-            <img className='image' src={props.slides[currentImg]} />
+            <img className='image' src={props.slides[currentImg]} alt="caroussel"/>
             {nbImg > 1 ?
                 <div className='wrapper'>
                     <ArrowBack className='wrapper__arrow wrapper__arrow--L' onClick={prevSlide} />

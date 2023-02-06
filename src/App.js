@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, useParams, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import About from './pages/About';
 import FicheLogement from './pages/FicheLogement';
 import Home from './pages/Home';
@@ -9,12 +9,12 @@ import "./styles/index.scss"
 const App = () => {
   const [logements, setLogements] = useState([]);
   useEffect(() => {
+    {/* fetch asynchrone afin de pouvoir acceder directement aux fiches logements */}
     async function fetchData() {
       const res = await fetch("http://localhost:3000/logements.json")
         const jsonRes = await res.json();
         const temp = await jsonRes;
         setLogements(temp);
-        console.log(logements);
       }
     fetchData();
   }, []);
