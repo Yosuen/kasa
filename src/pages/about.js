@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import aboutData from '../assets/dataset/about.json';
 
-{/* page à propos */}
+// page à propos
 
 const About = () => {
     return (

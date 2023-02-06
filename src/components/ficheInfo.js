@@ -5,7 +5,7 @@ import Host from './host.js';
 import Rating from './rating.js';
 import Dropdown from './dropdown';
 
-{/* partie inferieure de la page fiche logement */}
+//partie inferieure de la page fiche logement
 
 const FicheInfo = (props) => {
     const listEquipment = [];

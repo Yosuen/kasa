@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Arrow from '../assets/logos/arrow_back_ios-24px 1.svg';
 import "../styles/index.scss";
 
-{/* composant dropdown utilisé pour About et pour la fiche logement */}
+//composant dropdown utilisé pour About et pour la fiche logement
 
 const Dropdown = (props) => {
     const [wrapState, setWrapState] = useState(false);
