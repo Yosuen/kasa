@@ -26,7 +26,7 @@
     padding-top: 35px;
 }
 
-.galleryImg {
+.galleryImg, .galleryImgAbout {
     filter: brightness(70%);
     overflow: hidden;
     border-radius: 25px;
@@ -52,6 +52,11 @@
         font-weight: 500;
         line-height: 100%;
         padding: 0 50px 0 10px;
+    }
+    .galleryImgAbout { 
+        border-radius: 10px;
+        object-fit: cover;
+        height: 200px;
     }
     .galleryImg { 
         border-radius: 10px;

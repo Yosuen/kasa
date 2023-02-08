@@ -12,12 +12,14 @@ const About = () => {
             <div className='allButFooter'>
                 <Header />
                 <div className='galleryMaskGroup'>
-                    <img className='galleryImg' src={require('../assets/images/aboutImage.png')} alt='gallery' />
+                    <img className='galleryImgAbout' src={require('../assets/images/aboutImage.png')} alt='gallery' />
                 </div>
-                <Dropdown title={aboutData[0].title} text={aboutData[0].description} />
-                <Dropdown title={aboutData[1].title} text={aboutData[1].description} />
-                <Dropdown title={aboutData[2].title} text={aboutData[2].description} />
-                <Dropdown title={aboutData[3].title} text={aboutData[3].description} />
+                <div className='dropdownContainer'>
+                    <Dropdown title={aboutData[0].title} text={aboutData[0].description} />
+                    <Dropdown title={aboutData[1].title} text={aboutData[1].description} />
+                    <Dropdown title={aboutData[2].title} text={aboutData[2].description} />
+                    <Dropdown title={aboutData[3].title} text={aboutData[3].description} />
+                </div>
             </div>
             <Footer />
         </div>

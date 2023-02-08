@@ -11,8 +11,7 @@ const FicheLogement = ({ logements }) => {
     const navigate = useNavigate();
     useEffect(() => {
         setLogement(logements.find((element) => element.id === id));
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [logements, id]);
     if (logement === undefined) {
         navigate("/404", { state: { message: "Can't get data" } });
     } else {

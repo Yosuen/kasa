@@ -1,5 +1,5 @@
 .dropdown {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 20px 0;
     display: flex;
@@ -46,6 +46,7 @@
             rotate: 90deg;
             right: 35px;
         }
+
         &--down {
             rotate: -90deg;
             right: 25px;
@@ -53,17 +54,27 @@
     }
 }
 
-.smallText { 
+.dropdownContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.smallText {
     font-size: 18px;
 }
 
 @media (max-width: 768px) {
     .dropdown {
+        width: 100%;
         padding: 5px 0;
         margin: 10px 0;
+
         &__title {
             font-size: 13px;
         }
+
         &__content {
             font-size: 13px;
             line-height: 17px;
